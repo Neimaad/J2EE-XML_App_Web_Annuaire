@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../Images/accueil.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.message{
+	width: 600px;
+	height: 350px;
+	position: absolute;
+	left: 55%;
+	top: 45%;
+	transform: translateY(-50%);
+	overflow: hidden;
+}
+
+#slider{
+	display: inline-flex;
+	transition: 0.5s;	
+}
+
+.elem-slide{
+	width: 500px;
+	height: 350px;
+	margin: 0px 50px;
+	/*background-color: RGBa(192, 192, 192, 0.5);*/
+}
+
+.text{
+	padding: 15px;
+	padding-bottom: 0;
+	background-color: rgba(128, 128, 128, 0.50);
+	border: 2px solid black;
+	border-radius: 25px;
+}
+
+.elem-slide h1{
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid white;
+	background-image: linear-gradient(to left, violet, indigo, blue/*, green, yellow, orange, red*/);
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text; 
+	background-clip: text;
+	color: transparent;
+}
+
+.elem-slide p{
+	/*background-image: linear-gradient(to left/*, violet, indigo, blue, green, yellow, orange, red);
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text; 
+	background-clip: text;*/
+	color: white;
+	font-size: 17px;
+}
+
+.elem-slide a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(128, 128, 128, 0.5);
+	border: 2px solid black;
+	border-radius: 25px;
+	padding: 10px 25px;
+	margin-top: 20px;
+}
+
+.ctr{
+	width: 2px;
+	height: 400px;
+	background: white;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	transform: translateY(-50%);
+	border-radius: 25px;	
+}
+
+#line1, #line2, #line3, #line4{
+	width: 10px;
+	height: 100px;
+	cursor: pointer;
+	transform: translateX(-50%);
+}
+
+#active{
+	width: 10px;
+	height: 100px;
+	background-color: gray;
+	border-radius: 25px;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	transition: 0.7s;
+}
+
+.elem-slide a:hover{
+	background-color: gray;
+}

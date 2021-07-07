@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #2A8AAA;
+	background-image: url(../Images/contact1.png);
+	background-size: 50px;
+	background-repeat: repeat;
+}
+
+/*============================PARTIE RESEARCH========================*/
+
+.searchContact{
+	width: 100%;
+	height: 1500px;
+	background-image: url(../Images/search.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchContact h1{
+	font-size: 70px;
+	color: white;
+}
+
+form{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.inputs{
+	padding: 20px;
+	border : 2px solid black;
+	border-radius: 50px;
+	background: gray;
+	
+}
+
+.filtre{
+	display: none;
+	width:40%;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+.elem-filtre{
+	padding: 10px 30px;
+	border: 2px solid black;
+	border-radius: 50px;
+	background-color: lightgray;
+}
+
+.inputs > input{
+	padding: 2px 0px;
+	background-color: gray;
+	border: none;
+	border-bottom: 1px solid lightgray;
+}
+
+.inputs > input::placeholder{
+	color: white;
+	font-size: 14px;
+}
+
+
+#boutonRechercher{
+	margin: 0px 10px;
+	width: 60px;
+	height: 60px;
+	border : 2px solid black;
+	border-radius: 50px;
+	padding: 20px;
+	background-color: lightgray;
+	background-image: url(../Images/search.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	
+}
+
+/* =========================================== PARTIE AFFICHAGE ============================== */
+
+h2.delSearchContact{
+	width:100%;
+	text-align:center;
+	border:2px solid black;
+	background-color: red;
+	color: white;
+}
+
+h2.modifSearchContact{
+	width:100%;
+	text-align:center;
+	border:2px solid black;
+	background-color: green;
+	color: white;
+}
+
+.displayResearch{
+	display: flex;
+	flex-direction: column;
+	
+	margin: 0px 15%;
+	background-color: lightgray;
+}
+
+.contacts{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact{
+	margin: 10px 7%;
+	padding: 0px 20px;
+	width: 300px;
+	border: 3px solid black;
+	border-radius: 25px;
+	background-color: lightblue;
+	
+}
+
+
+.infoContact{
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+	border: none;
+}
+
+.buttons{
+	display: flex;
+}
+
+.buttons input{
+	margin: 10px 15px;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	border: 3px solid black;
+	border-radius: 25px;
+	
+}
+
+.displayResearch  form{
+	display:flex;
+	flex-direction:column;
+}
+
+.displayResearch h1{
+	margin: 25px;
+}
+
+
